@@ -23,8 +23,10 @@ A dashboard created to monitor real-time/daily payment transactions across diffe
 
 ## 📁 Files
 
-- `scripts/query.sql` — SQL script used to compute processing time and transactions
-
+-`average_processing_time.sql` - sql script used to compute average processing time
+-`delivery_rate.sql` - sql script used to compute delivery rate
+-`deposit_tracking.sql` - sql script used to track deposits
+[-`payment_summary.sql`](https://github.com/Ayeshungjosephat/Payment_Summary/edit/main/README.md)
 
 ## 📈 Use Case
 
