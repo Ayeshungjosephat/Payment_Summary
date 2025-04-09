@@ -22,11 +22,20 @@ A dashboard created to monitor real-time/daily payment transactions across diffe
 - Excel / Power Query (for preprocessing — optional)
 
 ## 📁 Files
+- sql query
+  ```
+    select 
+    countries.name
+    -- date_format(transactions.created_at,'%YM%m')  as Month
+    ,COUNT(*) count
+    ,sum(deposits.deposit_amount) amount
+    from transactions
+    left join users on users.id = transactions.user_id
+    left join countries on countries.id = users.country_id
+    left join deposits on deposits.transaction_id = transactions.id
+    where deposits.status = 'confirmed' and {{date}} and {{countries}}
+    group by countries.name
 
--`average_processing_time.sql` - sql script used to compute average processing time
--`delivery_rate.sql` - sql script used to compute delivery rate
--`deposit_tracking.sql` - sql script used to track deposits
-[-`payment_summary.sql`](https://github.com/Ayeshungjosephat/Payment_Summary/edit/main/README.md)
 
 ## 📈 Use Case
 
