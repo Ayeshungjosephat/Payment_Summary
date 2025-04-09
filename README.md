@@ -4,7 +4,8 @@ A dashboard created to monitor real-time/daily payment transactions across diffe
 
 ## 📸 Screenshot
 
-![Dashboard Screenshot](assets/dashboard-screenshot.png)
+![image](https://github.com/user-attachments/assets/d99f5660-fbed-4d25-863a-28238faf0118)
+
 
 ## 📊 Features
 
